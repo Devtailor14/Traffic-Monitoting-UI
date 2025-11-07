@@ -1,0 +1,5 @@
+{
+  "name": "YOLO Traffic Monitoring Dashboard",
+  "description": "A responsive web-based Traffic Monitoring Dashboard UI integrated with YOLO-based vehicle detection models. It allows for live inference, session management, and model performance comparison.",
+  "requestFramePermissions": []
+}

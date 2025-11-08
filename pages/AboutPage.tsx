@@ -1,12 +1,13 @@
-
 import React from 'react';
 import Card from '../components/Card';
 
 const AboutPage: React.FC = () => {
     const teamMembers = [
-        { name: 'Dr. Evelyn Reed', role: 'Lead AI Researcher', avatar: 'https://picsum.photos/seed/evelyn/100' },
-        { name: 'Mark Chen', role: 'Senior ML Engineer', avatar: 'https://picsum.photos/seed/mark/100' },
-        { name: 'Jasmine Patel', role: 'Data Scientist & Analyst', avatar: 'https://picsum.photos/seed/jasmine/100' },
+        { name: 'Dev', role: 'AI Engineer' },
+        { name: 'Nihal', role: 'Frontend Developer' },
+        { name: 'Pratyush', role: 'Backend Developer' },
+        { name: 'Dattatrey', role: 'Data Scientist' },
+        { name: 'Shivalik', role: 'Project Manager' },
     ];
 
     const milestones = [
@@ -34,7 +35,9 @@ const AboutPage: React.FC = () => {
                 <div className="flex flex-wrap gap-8 justify-center">
                     {teamMembers.map(member => (
                         <div key={member.name} className="text-center">
-                            <img src={member.avatar} alt={member.name} className="w-24 h-24 rounded-full mx-auto mb-2 shadow-lg" />
+                            <div className="w-24 h-24 rounded-full mx-auto mb-2 shadow-lg bg-slate-200 dark:bg-gray-700 flex items-center justify-center">
+                                <span className="text-3xl font-bold text-gray-600 dark:text-gray-300">{member.name.charAt(0)}</span>
+                            </div>
                             <h3 className="font-semibold">{member.name}</h3>
                             <p className="text-sm text-primary-500 dark:text-primary-400">{member.role}</p>
                         </div>
